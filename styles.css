@@ -96,18 +96,21 @@
 }
 
 .bDayLeft {
-    height:700px;
+    height:750px;
     display:inline-block;
     width:600px;
     float:left;
     margin-left:30px;
+    border:1px solid black;
 }
 
 .bDayRight {
     display:inline-block;
     width:600px;
+    height:750px;
     float:right;
     margin-right:30px;
+    border:1px solid black;
 }
 
 #bDayPrice {
