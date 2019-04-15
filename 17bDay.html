@@ -1,73 +1,78 @@
 <html>
 <head>
-    <title>17th Birthday List</title>  
-    <link rel="stylesheet" type="text/css" href="styles.css">  
+    <title>17th Birthday List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="bdayCountdown.js">
+    </script>
 </head>
-
 
 <body>
 
     <div class="navbar">
         <a href="index.html" style="font-size:30px; ">Home</a>
-        
+
         <div class="dropdown">
-            <button class="dropbtn" style="font-size:30px; font-weight:bold; margin-left20px;" onclick="window.location.href='lists.html'">Lists
+            <button class="dropbtn" style="font-size:30px; font-weight:bold; margin-left20px;" onclick="window.location.href='17bDay.html'">Lists
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content" style="font-size:36px; font-weight:bold;">
-                <a href="17bDay.html">17th Birthday 2019</a>
-                
-            </div> 
+                <a href="17bDay.html">Birthday List 2019</a>
+            </div>
         </div>
-        
+
         <a href="aboutSite.html" style="font-size:30px;">About Site</a>
     </div> <!-- This is the code copy pasted between all of the pages. All of the navigation code -->
 
-
     <div class="bodyText" align="center">
         <h1 style="font-weight:bold; font-size:50px;">17th Birthday List</h1>
+
+        <!-- Vacuum -->
+        <div class="bDayContainer">
+            <div class="bDayRight">
+                <img src="https://cdn.makitatools.com/apps/cms/img/xcv/757267a3-c753-4709-9f17-adee3bde3b94_xcv11z_p_1500px.png" height="400px" width="400">
+                <h3>Makita XCV11Z Dust Extractor</h3>
+                <p width="200px">Cordless Dust Extractor/Vacuum for use with my sander, jigsaw or drill. Can also be used as a vacuum cleaner for quick clean ups. 2 gallon capacity + can suck up liquids + other things regular vacuums cannot. Rated HEPA filter that captures particles >3 microns</p>
+                <h3 id="bDayPrice">169$</h3>
+                <h3><a href="https://www.amazon.com/Makita-XCV11Z-Lithium-Ion-Brushless-Extractor/dp/B07M8JTDNS">Link (Amazon.com)</a></h3>
+                <h3><a href="https://www.acmetools.com/shop/tools/makita-xcv11z">Link (Acmetools)</a></h3>
+            </div>
+            <!-- style="border:5px solid red" -->
+            <div class="bDayLeft">
+                <img src="https://cdn.makitatools.com/apps/cms/img/dc1/ab249af7-c17f-4aa6-b860-46b7154efc57_dc18rc_p_1500px.png">
+                <h3>Makita DC18RC Charger</h3>
+                <p width="200px">Charger for Makita Batteries (18V). Charger runs off 220v. <br><br>The batteries can be sourced locally at either ace or a place called nehmeh, but i would have to go with you to make sure they are the right ones</p>
+                <h3 id="bDayPrice">35$</h3>
+                <h3><a href="https://www.amazon.co.uk/Makita-DC18RC-14-4-18-Battery-Charger/dp/B008KXATOG/ref=sr_1_2?keywords=DC18rc&qid=1555253955&s=gateway&sr=8-2">Link (Amazon.co.uk)</a></h3>
+            </div>
+        </div>
+        <div class="navbar" style="color:white;">
+            <h3>TBD List</h3>
+        </div>
+        <br>
+        <!-- Circ Saw Right-->
+        <div class="bDayContainer">
+            <div class="bDayRight">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71P6q7cIfWL._SL1000_.jpg" height="400px" width="400">
+                <h3>DeWalt DCS570B 7 1/4" Circular Saw</h3>
+                <p width="200px">Circular saw for rip cutting plywood. Better for long straight cuts than a jigsaw is. (unlikely to get as it is kinda dangerous)</p>
+
+                <h3 id="bDayPrice">~130$</h3>
+                <h3><a href="https://www.amazon.com/DEWALT-DCS570B-Cordless-Circular-Baretool/dp/B06ZZY8KDL">Link (Amazon.com)</a></h3>
+                <h3><a href="https://www.acmetools.com/shop/tools/dewalt-dcs570b-20v-circular-saw-and-brake">Link (Acmetools)</a></h3>
+            </div>
+            <!-- LED Workligt Left -->
+            <div class="bDayLeft">
+                <img src="https://www.acmetoolstore.com/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/products/450px/E9098834-CDAB-48E0-9E9E-C74CF2297597.jpg">
+
+                <h3>Makita DML801 LED Work Light (240 lumen)</h3>
+                <p width="200px">LED Work light that runs off the same batteries as the vacuum. Good for wide area illumination, as the only other light that does wide area illumination is my Fenix. For use on IKEA jobs/working outside at night</p>
+                <h3 id="bDayPrice">~50$</h3>
+                <h3><a href="https://www.amazon.com/Makita-DML801-Lithium-Ion-Cordless-Flashlight/dp/B00QV8FNMU/ref=sr_1_1?keywords=DML801&qid=1555261004&s=gateway&sr=8-1">Link (Amazon.com)</a></h3>
+                <h3><a href="https://www.acmetools.com/shop/tools/makita-flashlights-and-accessories/makita-dml801">Link (Acmetools)</a></h3>
+            </div>
+        </div>
         
-<!-- Vacuum -->     
-        <div style="height:800px; ">
-        <div class="bodyText" width="50%" style="display:inline-block; width:600px; float:right; margin-right:30px;" align="left">
-            <img src="https://cdn.makitatools.com/apps/cms/img/xcv/757267a3-c753-4709-9f17-adee3bde3b94_xcv11z_p_1500px.png" height="400px" width="400">
-            <h3>Makita XCV11Z Dust Extractor</h3>
-            <p width="200px">Cordless Dust Extractor/Vacuum for use with my sander, jigsaw or drill. Can also be used as a vacuum cleaner for quick clean ups. 2 gallon capacity + can suck up liquids + other things regular vacuums cannot. Rated HEPA filter that captures particles >3 microns</p>
-            <h3 style="color:#50f442;">169$</h3>
-            <h3><a href="https://www.amazon.com/Makita-XCV11Z-Lithium-Ion-Brushless-Extractor/dp/B07M8JTDNS">Link (Amazon.com)</a></h3>
-            <h3><a href="https://www.acmetools.com/shop/tools/makita-xcv11z">Link (Acmetools)</a></h3>
-        </div>
-<!-- style="border:5px solid red" -->
-        <div class="bodyText"  align="left" style="height:700px;display:inline-block; width:600px; float:left; margin-left:30px;">
-            <img src="https://cdn.makitatools.com/apps/cms/img/dc1/ab249af7-c17f-4aa6-b860-46b7154efc57_dc18rc_p_1500px.png" height="400px" width="400">
-            <h3>Makita DC18RC Charger</h3>
-            <p width="200px">Charger for Makita Batteries (18V). Charger runs off 220v. <br><br>The batteries can be sourced locally at either ace or a place called nehmeh, but i would have to go with you to make sure they are the right ones</p>
-            <h3 style="color:#50f442;">35$</h3>
-            <h3><a href="https://www.amazon.co.uk/Makita-DC18RC-14-4-18-Battery-Charger/dp/B008KXATOG/ref=sr_1_2?keywords=DC18rc&qid=1555253955&s=gateway&sr=8-2">Link (Amazon.co.uk)</a></h3>
-        </div>
-        </div>
-        
-        <h1>TBD List</h1>
-<!-- Circ Saw Right-->    
-        <div style=";height:750px">
-        <div class="bodyText" width="50%" style="display:inline-block; width:600px; float:right; margin-right:30px;" align="left">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/71P6q7cIfWL._SL1000_.jpg" height="400px" width="400">
-            <h3>DeWalt DCS570B  7 1/4" Circular Saw</h3>
-            <p width="200px">Circular saw for rip cutting plywood. Better for long straight cuts than a jigsaw is. (unlikely to get as it is kinda dangerous)</p>
-            
-            <h3 style="color:#50f442;">~130$</h3>
-            <h3><a href="https://www.amazon.com/DEWALT-DCS570B-Cordless-Circular-Baretool/dp/B06ZZY8KDL">Link (Amazon.com)</a></h3>
-            <h3><a href="https://www.acmetools.com/shop/tools/dewalt-dcs570b-20v-circular-saw-and-brake">Link (Acmetools)</a></h3>
-        </div>
-<!-- LED Workligt Left -->  
-        <div class="bodyText" width="50%" style="display:inline-block; width:600px; float:left; margin-left:30px;" align="left">
-            <img src="https://www.acmetoolstore.com/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/products/450px/E9098834-CDAB-48E0-9E9E-C74CF2297597.jpg" height="400px" width="400">
-            
-            <h3>Makita DML801 LED Work Light (240 lumen)</h3>
-            <p width="200px">LED Work light that runs off the same batteries as the vacuum. Good for wide area illumination, as the only other light that does wide area illumination is my Fenix. For use on IKEA jobs/working outside at night</p>
-            <h3 style="color:#50f442;">~50$</h3>
-            <h3><a href="https://www.amazon.com/Makita-DML801-Lithium-Ion-Cordless-Flashlight/dp/B00QV8FNMU/ref=sr_1_1?keywords=DML801&qid=1555261004&s=gateway&sr=8-1">Link (Amazon.com)</a></h3>
-            <h3><a href="https://www.acmetools.com/shop/tools/makita-flashlights-and-accessories/makita-dml801">Link (Acmetools)</a></h3>
-        </div>
-        </div>
+        <div style="border:10px solid black;">
+        <h4 id="currTime" style="font-weight:normal; font-size:30px;">Current Date: <script>currDate();</script></h4>
+        <h4 id="timeToBday" style="font-weight:normal; font-size:30px;"><script>dayCountdown();</script></h4></div>
     </div>

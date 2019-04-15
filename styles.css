@@ -83,3 +83,34 @@
     border:5px solid red;
     background-color: darkgray;
 }
+
+/* Styles used on birthday list 2019 page */
+
+.bDayContainer {
+    height:800px;
+}
+
+.bDayContainer div img {
+    height:400px;
+    width:400;
+}
+
+.bDayLeft {
+    height:700px;
+    display:inline-block;
+    width:600px;
+    float:left;
+    margin-left:30px;
+}
+
+.bDayRight {
+    display:inline-block;
+    width:600px;
+    float:right;
+    margin-right:30px;
+}
+
+#bDayPrice {
+    color:#50f442;
+}
+

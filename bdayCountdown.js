@@ -36,7 +36,6 @@ function dayCountdown() {
 
             clearInterval(timer);
             document.write("Past Birthday")
-
             return;
         }
         
@@ -45,12 +44,8 @@ function dayCountdown() {
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
 
-        document.getElementById('timeToBday').innerHTML = days + 'days ';
-        document.getElementById('timeToBday').innerHTML += hours + 'hrs ';
-        document.getElementById('timeToBday').innerHTML += minutes + 'mins ';
-        document.getElementById('timeToBday').innerHTML += seconds + 'secs';
-        finalWrite = days + " Days, " + hours + " Hours, " + minutes + " Minutes, " + seconds + " Seconds until I Turn 17"
-        document.write(finalWrite);
+        finalWrite = days + " Days, " + hours + " Hours, " + minutes + " Minutes, " + seconds + " Seconds until I Turn 17";
+        document.getElementById("timeToBday").innerHTML = finalWrite;
     }
 
     timer = setInterval(showRemaining, 1000);
